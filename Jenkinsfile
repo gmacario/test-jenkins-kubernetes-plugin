@@ -3,7 +3,7 @@ pipeline {
     kubernetes {
       cloud 'kube-101'
       // label 'mypod'
-      // defaultContainer 'jnlp'
+      defaultContainer 'jnlp'
       yamlFile 'KubernetesPod.yaml'
     }
   }
