@@ -1,0 +1,12 @@
+pipeline {
+  agent {
+    kubernetes {
+      label 'mypod'
+      defaultContainer 'jnlp'
+      yamlFile 'KubernetesPod.yaml'
+    }
+  }
+  stages {
+      ...
+  }
+}
