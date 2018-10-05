@@ -8,6 +8,14 @@ pipeline {
     }
   }
   stages {
-      ...
+      steps {
+        echo 'TODO: Build'
+        sh '''#!/bin/bash
+# DEBUG
+id
+env | sort
+
+# EOF'''
+      }
   }
 }
