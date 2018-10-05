@@ -8,6 +8,7 @@ pipeline {
     }
   }
   stages {
+    stage('Build') {
       steps {
         echo 'TODO: Build'
         sh '''#!/bin/bash
@@ -17,5 +18,6 @@ env | sort
 
 # EOF'''
       }
+    }
   }
 }
