@@ -2,7 +2,7 @@ pipeline {
   agent {
     kubernetes {
       cloud 'kube-101'
-      // label 'mypod'
+      label 'mypod'
       defaultContainer 'jnlp'
       yamlFile 'KubernetesPod.yaml'
     }
